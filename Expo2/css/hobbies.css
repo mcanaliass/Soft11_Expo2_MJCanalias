@@ -1,0 +1,248 @@
+/* ===================================
+   ESTILOS GENERALES
+   =================================== */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===================================
+   SECCIÓN 2
+   =================================== */
+
+.inicioS2 {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 50%, #45B7D1 100%);
+    color: rgb(255, 255, 255);
+    padding: 100px 0;
+    min-height: 500px;
+}
+
+.inicio-icon {
+    font-size: 200px;
+    opacity: 0.9;
+}
+
+/* ===================================
+   SECCIÓN DE INFORMACIÓN
+   =================================== */
+
+.info-section {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.feature-icon {
+    font-size: 48px;
+    color: #FF6B6B;
+}
+
+.info-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ===================================
+   SECCIÓN DE COMPONENTES
+   =================================== */
+
+.components-section {
+    padding: 80px 0;
+}
+
+.card-icon {
+    font-size: 36px;
+    color: #4ECDC4;
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos específicos para badges de colores */
+.badge {
+    padding: 0.5em 0.8em;
+    font-size: 0.85rem;
+}
+
+/* Botones con efectos suaves */
+.btn {
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================
+   FORMULARIO
+   =================================== */
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #4ECDC4;
+    box-shadow: 0 0 0 0.25rem rgba(78, 205, 196, 0.25);
+}
+
+/* ===================================
+   BREADCRUMB Y ALERTAS
+   =================================== */
+
+.breadcrumb {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.alert {
+    border-radius: 0.5rem;
+    border: none;
+}
+
+/* ===================================
+   MODAL
+   =================================== */
+
+.modal-content {
+    border-radius: 1rem;
+    border: none;
+}
+
+.modal-header {
+    background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
+    color: white;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.modal-header .btn-close {
+    filter: invert(1);
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+footer {
+    background-color: #212529;
+    color: white;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #4ECDC4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #45B7D1;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-icons a:hover {
+    color: #4ECDC4;
+    transform: scale(1.2);
+}
+
+/* ===================================
+   MEDIA QUERIES PERSONALIZADAS
+   =================================== */
+
+/* Tablets y menores */
+@media (max-width: 991px) {
+    .inicioS2 {
+        padding: 60px 0;
+        min-height: 400px;
+    }
+    
+    .inicio-icon {
+        font-size: 120px;
+    }
+    
+    .info-section,
+    .components-section {
+        padding: 60px 0;
+    }
+}
+
+/* Móviles */
+@media (max-width: 767px) {
+    .inicioS2 {
+        padding: 40px 0;
+        min-height: auto;
+    }
+    
+    .inicio-icon {
+        font-size: 80px;
+        margin-top: 20px;
+    }
+    
+    .display-3 {
+        font-size: 2.5rem;
+    }
+    
+    .display-4 {
+        font-size: 2rem;
+    }
+    
+    .social-icons a {
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    
+    .feature-icon {
+        font-size: 36px;
+    }
+    
+    .card-icon {
+        font-size: 28px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 575px) {
+    .inicioS2 h1 {
+        font-size: 2rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    .card-body {
+        padding: 1rem;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
